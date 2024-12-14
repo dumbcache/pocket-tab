@@ -1,0 +1,116 @@
+:root {
+    /* --font-default: system-ui, Avenir, Helvetica, Arial, sans-serif; */
+    --font-comic: "Comic neue", sans-serif;
+    --size-system: 62.5%;
+    --font-size-default: 1.6rem;
+    --size-small: 1.4rem;
+    --size-smallest: 1rem;
+
+    --bg-color: #101114;
+    --bg-color-one: #222;
+    --bg-color-two: #333;
+    --color: #ccc;
+    --color-one: #aaa;
+    --color-focus: #0af;
+    --color-green: #5f5;
+
+    --color-black-one: #101114;
+    --color-white-one: #f4fafb;
+    --color-green: rgb(0, 166, 166);
+    --color-red: rgb(255, 0, 80);
+    --color-shadow: #0005;
+    --color-backdrop: #fff2;
+    --color-popup: var(--color-white-one);
+
+    --color: light-dark(var(--color-black-one), var(--color-white-one));
+    --color-bg: light-dark(var(--color-white), var(--color-black-one));
+    --color-focus: light-dark(var(--color-red), var(--color-green));
+}
+
+:root {
+    color-scheme: light dark;
+    /* background-color: var(--color-purple-background); */
+    /* background-color: #101114; */
+    background-color: Canvas;
+    color: var(--color);
+    color: CanvasText;
+    font-family: var(--font-comic);
+    font-size: var(--size-system);
+    line-height: var(--line-height-default);
+    height: 100%;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0.5rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: inherit;
+    scroll-behavior: inherit;
+    font-family: inherit;
+}
+
+body {
+    font-family: var(--font-comic);
+    font-size: var(--font-size-default);
+}
+
+body,
+.app {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+input,
+button {
+    color: inherit;
+    display: inline-block;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+svg {
+    width: 100%;
+    fill: var(--color);
+}
+
+.btn:hover svg {
+    fill: var(--color-focus);
+}
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.s-prime {
+    width: 2rem;
+    height: 2rem;
+}
+
+.s-second {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+img {
+    width: 100%;
+}
